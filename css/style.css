@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    overflow: hidden;
+    font-family: helvetica, arial, sans-serif;
+}
+
+.map {
+    position: absolute;
+    right: 0px;
+    left: 340px;
+    height: 100%;
+    top: 0;
+}
+
+.sidebar {
+    color:#000031
+    position: absolute;
+    left: 0px;
+    width: 340px;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.main-heading{
+  color" #110023;
+
+
+  .legend {
+    position: absolute;
+    background-color: #fff;
+    z-index: 2000;
+    right:15px;
+    bottom:50px;
+    margin:15px;
+    padding:10px 10px 10px 10px;
+    border:1px solid #ffffff;
+  }
+
+
+  .box {
+    position: absolute;
+    background-color: #ff0000;
+    z-index: 2000;
+  }
+
+  #green{
+    color:#008000;
+  }
+
+  #slidenumber{
+    color:#fffff0;
+    font-size:10px;
+  }
+
+
+
+}
+
+.
