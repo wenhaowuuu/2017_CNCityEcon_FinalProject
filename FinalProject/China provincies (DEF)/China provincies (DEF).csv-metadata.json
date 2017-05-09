@@ -1,0 +1,225 @@
+{
+  "licenseType": "Unknown",
+  "dc:description": "De provincies van China.",
+  "exportable": true,
+  "defaultStyle": 3,
+  "dc:title": "China provincies (DEF)",
+  "dc:modified": "2013-02-11T10:00:26Z",
+  "dc:identifier": "11vScTuyAAreKP3aX0u3uFefiHTaCfrCrsRxIH0Y",
+  "tableSchema": {"columns": [
+    {
+      "datatype": "location",
+      "name": "col0",
+      "validateData": false,
+      "title": "Provincie"
+    },
+    {
+      "datatype": "location",
+      "name": "col1",
+      "validateData": false,
+      "title": "geometry"
+    },
+    {
+      "datatype": "double",
+      "name": "col2",
+      "validateData": false,
+      "title": "geometry_vertex_count"
+    },
+    {
+      "datatype": "double",
+      "name": "col3",
+      "validateData": false,
+      "title": "ID_0"
+    },
+    {
+      "datatype": "string",
+      "name": "col4",
+      "validateData": false,
+      "title": "ISO"
+    },
+    {
+      "datatype": "string",
+      "name": "col5",
+      "validateData": false,
+      "title": "NAME_0"
+    },
+    {
+      "datatype": "double",
+      "name": "col6",
+      "validateData": false,
+      "title": "ID_1"
+    },
+    {
+      "datatype": "string",
+      "name": "col7",
+      "validateData": false,
+      "title": "VARNAME_1"
+    },
+    {
+      "datatype": "string",
+      "name": "col8",
+      "validateData": false,
+      "title": "NL_NAME_1"
+    },
+    {
+      "datatype": "string",
+      "name": "col9",
+      "validateData": false,
+      "title": "HASC_1"
+    },
+    {
+      "datatype": "string",
+      "formatPattern": "<a href='%1$s'>%1$s<\/a>",
+      "name": "col10",
+      "validateData": false,
+      "title": "CC_1"
+    },
+    {
+      "datatype": "string",
+      "name": "col11",
+      "validateData": false,
+      "title": "TYPE_1"
+    },
+    {
+      "datatype": "string",
+      "name": "col12",
+      "validateData": false,
+      "title": "ENGTYPE_1"
+    },
+    {
+      "datatype": "string",
+      "name": "col13",
+      "validateData": false,
+      "title": "VALIDFR_1"
+    },
+    {
+      "datatype": "string",
+      "name": "col14",
+      "validateData": false,
+      "title": "VALIDTO_1"
+    },
+    {
+      "datatype": "string",
+      "formatPattern": "<a href='%1$s'>%1$s<\/a>",
+      "name": "col15",
+      "validateData": false,
+      "title": "REMARKS_1"
+    },
+    {
+      "datatype": "double",
+      "name": "col16",
+      "validateData": false,
+      "title": "Shape_Leng"
+    },
+    {
+      "datatype": "double",
+      "name": "col17",
+      "validateData": false,
+      "title": "Shape_Area"
+    },
+    {
+      "datatype": "double",
+      "name": "col18",
+      "validateData": false,
+      "title": "ISO_ft_style"
+    },
+    {
+      "datatype": "double",
+      "name": "col19",
+      "validateData": false,
+      "title": "NAME_0_ft_style"
+    },
+    {
+      "datatype": "double",
+      "name": "col20",
+      "validateData": false,
+      "title": "NL_NAME_1_ft_style"
+    },
+    {
+      "datatype": "string",
+      "formatPattern": "<a href='%1$s'>%1$s<\/a>",
+      "name": "col21",
+      "validateData": false,
+      "title": "CC_1_ft_style"
+    },
+    {
+      "datatype": "double",
+      "name": "col22",
+      "validateData": false,
+      "title": "TYPE_1_ft_style"
+    },
+    {
+      "datatype": "double",
+      "name": "col23",
+      "validateData": false,
+      "title": "ENGTYPE_1_ft_style"
+    },
+    {
+      "datatype": "double",
+      "name": "col24",
+      "validateData": false,
+      "title": "VALIDFR_1_ft_style"
+    },
+    {
+      "datatype": "double",
+      "name": "col25",
+      "validateData": false,
+      "title": "VALIDTO_1_ft_style"
+    },
+    {
+      "datatype": "string",
+      "formatPattern": "<a href='%1$s'>%1$s<\/a>",
+      "name": "col26",
+      "validateData": false,
+      "title": "REMARKS_1_ft_style"
+    },
+    {
+      "datatype": "string",
+      "name": "col27",
+      "validateData": false,
+      "title": "import_notes"
+    },
+    {
+      "datatype": "double",
+      "name": "col28",
+      "validateData": false,
+      "title": "Population x 10,000"
+    },
+    {
+      "datatype": "string",
+      "name": "col29",
+      "validateData": false,
+      "title": "penetration rate"
+    },
+    {
+      "datatype": "string",
+      "name": "col30",
+      "validateData": false,
+      "title": "rate of increase"
+    },
+    {
+      "datatype": "double",
+      "name": "col31",
+      "validateData": false,
+      "title": "penetration rate rank"
+    },
+    {
+      "datatype": "double",
+      "name": "col32",
+      "validateData": false,
+      "title": "speed of increase rank"
+    },
+    {
+      "datatype": "double",
+      "name": "col33",
+      "validateData": false,
+      "title": "BBP groei (%) per provincie (2013)"
+    },
+    {
+      "datatype": "double",
+      "name": "col34",
+      "validateData": false,
+      "title": "Aandeel in BBP China (%, 2011)"
+    }
+  ]}
+}
