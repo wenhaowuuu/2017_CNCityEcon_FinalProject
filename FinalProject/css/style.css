@@ -18,7 +18,7 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 
 #header{
   position:fixed;
-  height:30px;
+  height:36px;
   background-color:#f07f30;
   top:0px;
   left:0;
@@ -30,11 +30,11 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 #header_text{
   position:relative;
   top:5px;
-  left:3px;
+  left:5px;
   color:#ffffff;
   font-weight:normal;
-  font-family: Simplifica;
-  font-size: 12px;
+  font-family:inherit;
+  font-size: 16px;
 }
 
 #option{

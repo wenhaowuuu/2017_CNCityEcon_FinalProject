@@ -12,11 +12,11 @@
 
 //////////////////////////////////////PART 1  MAP SET UP////////////////////////////////////////////////////
 var map = L.map('map', {
-  center: [32.9670, 117.5370],
+  center: [3.9670, -74.5370],
   zoom: 3.5
 });
 
-var layerMappedMarkers;
+ var layerMappedMarkers;
 var slideNumber = 0;
 var parsedData;
 var parsedData2;
@@ -27,8 +27,68 @@ var dataset = "https://raw.githubusercontent.com/wenhaowuuu/MidTermFinal/master/
 var dataset2 = "https://raw.githubusercontent.com/CPLN692-MUSA611/datasets/master/geojson/housingprice_Beijing.geojson";
 var dataset3 = "https://raw.githubusercontent.com/wenhaowuuu/FinalProject/master/data/china_provincies_def.geojson";
 
+// console.log("1st");
 
 var filterFunction;
+
+///LATIN AMERICA SHP
+// following geojson from shapescape is not useful!!
+// var latinamerica = "http://www.shpescape.com/mix/uploads/b7670c7f9d629a6e1d304a75b01c2cba.json/";
+// var BRTline = "http://www.shpescape.com/mix/uploads/7709b655cd6a057947e63d0cced5a8c7.json/";
+
+$.ajax(BRTline).done(function(data){
+  console.log(data);
+  var linestring = turf.lineString(_.map(data,function(data){
+  return data.reverse();}));
+  console.log("reversed");
+  //CONVERT TO GEOJSON LINE//
+  var lineStyle = {
+    "color": "red",
+    "weight": 3,
+    "opacity":0.75,
+    "dashArray": "8 8"
+  };
+  var BRTRoute = L.geoJSON(linestring,{
+    style:lineStyle
+  }).addTo(map);
+
+})
+
+
+//LOAD BRT lines
+  // $(document).ready(function() {
+  //   jsontoadd.locations.push({"lat":OriginLat,"lon":OriginLon},{"lat":DestLat,"lon":DestLon});
+  //     console.log("points added");
+  //     newurlsmproute = urlsmproute + JSON.stringify(jsontoadd);
+  //     console.log(newurlsmproute);
+  //     $.ajax(newurlsmproute).done(function(data){
+  //       var string = data.trip.legs[0].shape;
+  //       console.log("string");
+  //       var decodedData = decode(string,6);
+  //       console.log("decodedData");
+  //       var linestring1 = turf.lineString(_.map(decodedData,function(data){
+  //       return data.reverse();}));
+  //       //CONVERT TO GEOJSON LINE//
+  //       var lineStyle = {
+  //         "color": "red",
+  //         "weight": 3,
+  //         "opacity":0.75,
+  //         "dashArray": "8 8"
+  //       };
+  //       var Route = L.geoJSON(linestring1,{
+  //         style:lineStyle
+  //       }).addTo(map);
+  //       $('#national').click(function(){
+  //         map.removeLayer(Route);
+  //       });
+  //     });
+  //   });
+
+
+
+
+
+
 
 L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png', {
   maxZoom: 18,
@@ -37,6 +97,32 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png', {
 }).addTo(map);
 
 ///1.0 SET UP DIFFERENT BASE MAPS
+
+///LOAD ESRI BASEMAPS
+//
+// require([
+//    "esri/basemaps",
+//    "esri/map",
+//    "dojo/domReady!"
+//  ], function (esriBasemaps, Map){
+//    esriBasemaps.delorme = {
+//      baseMapLayers: [{url: "https://services.arcgisonline.com/ArcGIS/rest/services/Specialty/DeLorme_World_Base_Map/MapServer"}
+//      ],
+//      thumbnailUrl: "https://www.example.com/images/thumbnail_2014-11-25_61051.png",
+//      title: "Delorme"
+//    };
+//
+//    var map = new Map("ui-map", {
+//      basemap: "delorme",
+//      center: [-111.879655861, 40.571338776], // long, lat
+//      zoom: 13,
+//      sliderStyle: "small"
+//    });
+// });
+
+
+
+
 ///switch basemaps///
 $('#dark').click(function(){
   L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png', {
@@ -81,6 +167,16 @@ $('#midnight').click(function(){
 
 
 
+
+///0.1ADDING SOME MARKERS
+L.marker([4.674290, -74.103698]).addTo(map).bindPopup("Bogota, Colombia");
+L.marker([10.395132, -75.485867]).addTo(map).bindPopup("Cartagena, Colombia");
+L.marker([8.997980, -79.527990]).addTo(map).bindPopup("Panama City, Panama");
+L.marker([-0.183847, -78.490285]).addTo(map).bindPopup("Quito, Ecuador");
+L.marker([9.931887, -84.085539]).addTo(map).bindPopup("San Jose, Costa Rica");
+
+
+
 ///1.1 DEFINE GLOBAL VARIABLES
 var url = "https://search.mapzen.com/v1/search?api_key=mapzen-Dok7vcm&size=1&text=";
 var newurl = "";
@@ -122,8 +218,8 @@ var state = {
   slideNumber: 0,
   slideData:[
     {
-      "name": "The Original List of Chinese Cities",
-      "content": "Here presented are economic development data for the 35 provincial capital cities in China.",
+      "name": "The Original List of Latin American Cities",
+      "content": "Here presented are economic development data for the 31 national capital cities in Latin America.",
     },
     {
       "name": "Cities with the Highest GDP",
