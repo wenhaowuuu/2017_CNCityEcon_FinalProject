@@ -1,8 +1,0 @@
-make shadow in the png
-
-icons: github MAKI
-
-
-https://www.mapbox.com/maki-icons/guidelines/
-
-https://thenounproject.com/
