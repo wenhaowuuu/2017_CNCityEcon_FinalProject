@@ -25,7 +25,7 @@ var parsedData4;
 var dataset0 = "https://raw.githubusercontent.com/wenhaowuuu/MidTermFinal/master/data/EconomicIndicator_Chinesecities.geojson";
 var dataset = "https://raw.githubusercontent.com/wenhaowuuu/MidTermFinal/master/data/EconomicIndicator_Chinesecities.geojson";
 var dataset2 = "https://raw.githubusercontent.com/CPLN692-MUSA611/datasets/master/geojson/housingprice_Beijing.geojson";
-var dataset3 = "https://raw.githubusercontent.com/wenhaowuuu/FinalProject/master/data/china_provincies_def.geojson";
+var dataset3 = "https://raw.githubusercontent.com/wenhaowuuu/2017_CNCityEcon_FinalProject/master/data/china_provincies_def.geojson";
 
 // console.log("1st");
 
